@@ -1,0 +1,35 @@
+Nome: Rafael Szeuczuk André
+
+1. No código do Exemplo 1 (página 5), explique a diferença entre o resultado das linhas 21 e 23. Também explique o que aconteceria se a instrução da linha 23 fosse substituída por  cout << nome << endl;.
+
+O resultado da linha 21 é somente o dado informado pelo usuário, já o resultado da linha 23, é o dado, porém depois de ele passar pelas funções iniciais. Se a instrução da linha 23 fosse substituída por cout << nome << endl, ele iria “imprimir” om lixo de memória, logo que a variável aluno é uma variável local das funções iniciais.
+
+2. Considere os seguintes protótipos de funções e a implementação do main():
+
+Se a função for um parâmetro, o tipo de variável VOID;
+Os retunos chamam a função pelo nome da função;
+
+void bom_dia(){
+cout<<"Bom dia"<<endl;}
+
+int aleat()
+    {
+        unsigned seed = time(0);
+        srand(seed);
+
+        return (1 + rand() %10);
+    }
+
+int dobro(int x);
+return(x*2);
+
+void mostra_dobro(int x);
+cout<<x*2<<endl;
+
+3.	O que você pode afirmar sobre as seguintes interfaces de funções?
+int rand (void);// retorna um número aleatorio.
+void srand (unsigned int seed);//provavelmente "imprime" um número aleatorio a partir de uma semente fornecida no main().
+int atoi (const char * str);//converte uma string e retorna um numero inteiro.
+
+
+
